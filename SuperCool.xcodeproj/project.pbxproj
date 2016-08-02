@@ -14,6 +14,7 @@
 		290A9F371D49B81A00A185CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290A9F351D49B81A00A185CF /* LaunchScreen.storyboard */; };
 		290A9F421D49B81A00A185CF /* SuperCoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A9F411D49B81A00A185CF /* SuperCoolTests.swift */; };
 		290A9F4D1D49B81A00A185CF /* SuperCoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290A9F4C1D49B81A00A185CF /* SuperCoolUITests.swift */; };
+		290A9F5B1D49BD3100A185CF /* Boom-App.png in Resources */ = {isa = PBXBuildFile; fileRef = 290A9F5A1D49BD3100A185CF /* Boom-App.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		290A9F481D49B81A00A185CF /* SuperCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		290A9F4C1D49B81A00A185CF /* SuperCoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCoolUITests.swift; sourceTree = "<group>"; };
 		290A9F4E1D49B81A00A185CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290A9F5A1D49BD3100A185CF /* Boom-App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Boom-App.png"; path = "../../../../Downloads/Boom-App.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				290A9F2E1D49B81A00A185CF /* ViewController.swift */,
 				290A9F301D49B81A00A185CF /* Main.storyboard */,
 				290A9F331D49B81A00A185CF /* Assets.xcassets */,
+				290A9F5A1D49BD3100A185CF /* Boom-App.png */,
 				290A9F351D49B81A00A185CF /* LaunchScreen.storyboard */,
 				290A9F381D49B81A00A185CF /* Info.plist */,
 			);
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					290A9F281D49B81A00A185CF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HMBH53T2L3;
 					};
 					290A9F3C1D49B81A00A185CF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -231,6 +235,7 @@
 			files = (
 				290A9F371D49B81A00A185CF /* LaunchScreen.storyboard in Resources */,
 				290A9F341D49B81A00A185CF /* Assets.xcassets in Resources */,
+				290A9F5B1D49BD3100A185CF /* Boom-App.png in Resources */,
 				290A9F321D49B81A00A185CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SuperCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matadigital.SuperCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SuperCool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matadigital.SuperCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
